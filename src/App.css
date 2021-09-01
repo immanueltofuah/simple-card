@@ -1,0 +1,41 @@
+.container{
+  align-content: center;
+  height:50vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "image image title title title title"
+  "image image title title title title"
+  "image image description description description description"
+  "image image description description description description"
+  "image image description description description description"
+  "image image description description description description"
+  ;
+
+  grid-gap: 0.25rem;
+}
+
+
+.hi {
+  color: red;
+}
+
+.img{
+  grid-area: image;
+  background: blue;
+  border: solid;
+}
+
+.tit{
+  grid-area: title;
+background: rgb(35, 192, 74);
+padding-left: 1rem;
+}
+
+.des{
+  grid-area: description;
+  background: rgb(141, 84, 13);
+  padding-left: 1rem;
+}
+
